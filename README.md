@@ -8,7 +8,7 @@
     - 서버 프로세스에서 여러 클라이언트 소켓을 연결합니다.
     - 이때 파일 디스크립터를 이용해 여러 클라이언트 소켓 연결을 관리합니다.
     - 서버에서 채팅입력을 받아 사용자의 이름과 메세지를 각 채팅방에 있는 클라이언트에게 전달합니다.
-    - [chat-program/결과화면.png at main · wonjong-github/chat-program](https://github.com/wonjong-github/chat-program/blob/main/multiplexing/결과화면.png)
+    - ![chat-program/결과화면](./multiplexing/결과화면.png)
 
      
 
@@ -19,7 +19,7 @@
     - 여기에서는 채팅 서버에서 클라이언트의 요청이 왔을 때, 각 클라이언트를 처리하는 쓰레드를 생성합니다.
     - 그리고 클라이언트 소켓을 관리하는 변수를 전역변수로 선언되었기 때문에 쓰레드에서 다중접속이 가능합니다. 이를 임계영역으로 만들기 위해 mutex를 사용합니다.
     - 클라이언트에서는 메세지를 보내는 쓰레드와 메세지를 읽는 쓰레드를 이용해 채팅을 구현합니다.
-    - [chat-program/multi-thread screenshot.png at main · wonjong-github/chat-program](https://github.com/wonjong-github/chat-program/blob/main/multithread/multi-thread screenshot.png)
+    - ![chat-program/multi-thread screenshot](./multi-thread screenshot.png)
 
   
 
